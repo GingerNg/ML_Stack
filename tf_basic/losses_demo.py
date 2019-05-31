@@ -9,11 +9,6 @@ y_pred = np.array([[2.,1.,1.],[1.,1.,1.]])
 # y_true= tf.convert_to_tensor(y_true)
 # y_pred= tf.convert_to_tensor(y_pred)
 """logistic regression loss"""
-# tf.nn
-"""log-likelihood"""
-"""
-对于给定的输入，输出值越接近真实值越理想，这个就是所谓的最大似然。
-"""
 lll_loss = tf.nn.log_poisson_loss(targets=y_true,
                                   log_input=tf.log(y_pred))
 

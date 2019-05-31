@@ -6,6 +6,8 @@ filter_shape = [filter_size, embedding_size, 1, num_filters]
 
 output(feature map) [batch, out_height, out_width, out_channels]
 
+一个 epoch（代）是指整个数据集正向反向训练一次。
+
 """
 import tensorflow as tf
 input = tf.Variable(tf.random_normal([10,6,6,5]))

@@ -2,6 +2,9 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense
 import numpy as np
+
+from keras.utils.vis_utils import plot_model
+
 #输入训练数据 keras接收numpy数组类型的数据
 x=np.array([[0,1,0],
             [0,0,1],
@@ -27,3 +30,6 @@ simple_model.fit(x,y,epochs=10)
 val = x[0:1]
 y_=simple_model.predict_classes(x[0:1])
 print("[0,1,0]的分类结果："+str(y[0]))
+
+# 显示网络结构图
+plot_model(simple_model, to_file='simple_model.png', show_shapes=True, show_layer_names=False)

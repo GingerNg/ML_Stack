@@ -1,5 +1,6 @@
 
 """
+标准化标签
 sklearn.preprocessing.LabelEncoder()：标准化标签，将标签值统一转换成range(标签值个数-1)范围内
 """
 # coding:utf-8
